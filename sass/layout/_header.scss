@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin:0 auto;
+    background-size: 100% 100%;
+    overflow: hidden;
+    // background-color: $color-light-blue;
+    text-transform: capitalize;
+    
+    &__logo {
+        background-color: red;
+        height: 4rem;
+    }
+
+    &__text-box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__bg-img {
+        height: 40rem;
+    }
+
+}
+
+.heading-primary {
+    width: 60%;
+    text-align: center;
+
+    &--main {
+        display: block;
+        font-size: 2rem;
+    }
+    &--sub {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+    a {
+        display: block;
+        margin-top: $margin--small;
+    }
+}

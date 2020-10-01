@@ -1,0 +1,17 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "Landing page for gfg",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "blitzblade",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

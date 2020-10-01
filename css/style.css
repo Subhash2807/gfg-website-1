@@ -1,0 +1,53 @@
+body,
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0.5rem; }
+
+body {
+  background: url("/img/confettin-bg.svg");
+  background-size: cover;
+  overflow: scroll; }
+
+/**
+ * Basic typography style for copy text
+ */
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  background-size: 100% 100%;
+  overflow: hidden;
+  text-transform: capitalize; }
+  .header__logo {
+    background-color: red;
+    height: 4rem; }
+  .header__text-box {
+    display: flex;
+    align-items: center; }
+  .header__bg-img {
+    height: 40rem; }
+
+.heading-primary {
+  width: 60%;
+  text-align: center; }
+  .heading-primary--main {
+    display: block;
+    font-size: 2rem; }
+  .heading-primary--sub {
+    display: inline-block;
+    font-size: 1.5rem; }
+  .heading-primary a {
+    display: block;
+    margin-top: 2rem; }

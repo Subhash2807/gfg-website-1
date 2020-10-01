@@ -8,8 +8,10 @@ button {
 
 body {
   background: url("/img/confettin-bg.svg");
-  background-size: cover;
-  overflow: scroll; }
+  background-repeat:repeat;
+  background-size: 50vh;
+  overflow: scroll; 
+}
 
 /**
  * Basic typography style for copy text

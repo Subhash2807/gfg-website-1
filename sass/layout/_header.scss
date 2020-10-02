@@ -3,45 +3,113 @@
 // -----------------------------------------------------------------------------
 
 .header {
-    display: flex;
-    flex-direction: column;
     width: 95%;
-    margin:0 auto;
-    background-size: 100% 100%;
-    overflow: hidden;
-    // background-color: $color-light-blue;
+    margin: 0 auto;
     text-transform: capitalize;
     
     &__logo {
-        background-color: red;
-        height: 4rem;
+        height: 3rem;
     }
 
     &__text-box {
+        margin-top: $margin--large;
         display: flex;
+        flex-direction: column;
         align-items: center;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-align: center;
     }
 
     &__bg-img {
-        height: 40rem;
+        margin-top: $margin--medium;
+        width: 80vw;
     }
 
 }
 
 .heading-primary {
-    width: 60%;
-    text-align: center;
+    display: flex;
+    overflow: hidden;
+    &--main--1,&--main--2 {
+        font-size: 3.4rem;
+    }
 
-    &--main {
-        display: block;
-        font-size: 2rem;
+    &--main--1 {
+        position: relative;
+        color: $color-light-green;
+        
+        // transform:translateY(30px);
+        animation: moveInUp 1s;
+        -webkit-animation: moveInLeft 1s;
+        transition: all 1s;
+    }
+    
+    &--main--2 {
+        color: white;
+        // background-color: #8ec6c5;
+        padding: 0.2rem 3rem;
+        
+        background: linear-gradient(to left , white 50%, $color-light-green 50%);
+        background-size: 200% 100%;
+        background-position:right bottom;
+        transition:all 1s ease;
+        animation: moveInRight 1s forwards;
+        // -webkit-animation: moveInDown 0.5s;
+        transition: all 1s;
     }
     &--sub {
-        display: inline-block;
-        font-size: 1.5rem;
+        display: block;
+        font-size: 2rem;
+        margin-top: $margin--medium
     }
     a {
-        display: block;
         margin-top: $margin--small;
+    }
+}
+
+.line-vertical {
+    &-1 ,&-2 {
+        width: 0.2rem;
+    }
+}
+
+.line-horizontal {
+    &-1,&-2 {
+        width: 32rem;
+    }
+
+    &-1 {
+        width: 40rem;
+        position: absolute;
+        top: 18.5rem;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform:translateX(300px);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        background-position:right bottom;
+        
+        background-color: $color-white;
+    }
+    100% {
+        background-position:left bottom;
+        
+        background-color: $color-light-green;
     }
 }

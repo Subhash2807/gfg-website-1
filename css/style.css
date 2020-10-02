@@ -1,17 +1,14 @@
+* {
+  overflow-x: hidden; }
+
 body,
 button {
   font-family: 'Poppins', sans-serif;
   font-size: 10px;
   box-sizing: border-box;
   margin: 0%;
-  padding: 0.5rem; }
-
-body {
-  background: url("/img/confettin-bg.svg");
-  background-repeat:repeat;
-  background-size: 50vh;
-  overflow: scroll; 
-}
+  padding: 0.5rem;
+  padding-top: 2rem; }
 
 /**
  * Basic typography style for copy text
@@ -25,31 +22,75 @@ body {
   display: table; }
 
 .header {
-  display: flex;
-  flex-direction: column;
   width: 95%;
   margin: 0 auto;
-  background-size: 100% 100%;
-  overflow: hidden;
   text-transform: capitalize; }
   .header__logo {
-    background-color: red;
-    height: 4rem; }
+    height: 3rem; }
   .header__text-box {
+    margin-top: 8rem;
     display: flex;
-    align-items: center; }
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center; }
   .header__bg-img {
-    height: 40rem; }
+    margin-top: 4rem;
+    width: 80vw; }
 
 .heading-primary {
-  width: 60%;
-  text-align: center; }
-  .heading-primary--main {
-    display: block;
-    font-size: 2rem; }
+  display: flex;
+  overflow: hidden; }
+  .heading-primary--main--1, .heading-primary--main--2 {
+    font-size: 3.4rem; }
+  .heading-primary--main--1 {
+    position: relative;
+    color: #8ec6c5;
+    animation: moveInUp 1s;
+    -webkit-animation: moveInLeft 1s;
+    transition: all 1s; }
+  .heading-primary--main--2 {
+    color: white;
+    padding: 0.2rem 3rem;
+    background: linear-gradient(to left, white 50%, #8ec6c5 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 1s ease;
+    animation: moveInRight 1s forwards;
+    transition: all 1s; }
   .heading-primary--sub {
-    display: inline-block;
-    font-size: 1.5rem; }
-  .heading-primary a {
     display: block;
+    font-size: 2rem;
+    margin-top: 4rem; }
+  .heading-primary a {
     margin-top: 2rem; }
+
+.line-vertical-1, .line-vertical-2 {
+  width: 0.2rem; }
+
+.line-horizontal-1, .line-horizontal-2 {
+  width: 32rem; }
+
+.line-horizontal-1 {
+  width: 40rem;
+  position: absolute;
+  top: 18.5rem; }
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(300px);
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes moveInRight {
+  0% {
+    background-position: right bottom;
+    background-color: #ffffff; }
+  100% {
+    background-position: left bottom;
+    background-color: #8ec6c5; } }

@@ -1,7 +1,6 @@
 .section-about {
     position: block;
     width: 100%;
-    height:auto;
     margin: 0 auto;
     text-align: center;
     margin-top: $margin--large;
@@ -9,6 +8,7 @@
     
 
     .row{
+        position: relative;
         display: flex;
         width: 75%;
         text-align: left;
@@ -17,10 +17,12 @@
         // flex-direction: column;
         // padding: 1rem 3rem;
         align-items: center;
+        padding: 0rem 3rem;
     }
 }
 
 .col {
+    position: relative;
     &-1{
         width: 41vw;
         font-size: 1rem;
@@ -30,6 +32,10 @@
         p{
             line-height: 2rem;
             text-transform: capitalize;
+        }
+
+        & a {
+        position: absolute; 
         }
     }
 

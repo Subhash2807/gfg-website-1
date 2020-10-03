@@ -14,12 +14,19 @@ button {
  * Basic typography style for copy text
  */
 .heading-secondary {
-  font-size: 2.4rem;
+  position: relative;
+  overflow-y: hidden;
+  font-size: 1.7rem;
   color: #000000;
   background-image: -webkit-gradient(linear, left top, right top, from(#8EC6C5), to(#8566aa));
   background-image: linear-gradient(to right, #8EC6C5, #8566aa);
   -webkit-background-clip: text;
-  color: transparent; }
+  color: transparent;
+  transition: all 0.3s; }
+  .heading-secondary:hover {
+    -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.5); }
 
 .heading-tertiary {
   font-size: 1.8rem;
@@ -28,14 +35,21 @@ button {
 .u-margin-top-small {
   margin-top: 2rem; }
 
+.u-margin-bottom-large {
+  margin-bottom: 8rem; }
+
 .btn-text {
   font-size: 1.3rem;
   font-weight: 700;
   color: #ffffff;
   background-color: #2E6BD1;
   text-decoration: none;
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 2rem;
+  transition: all 0.3s;
   outline: none; }
+  .btn-text:hover {
+    transform: translateY(-6px);
+    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.5); }
 
 /**
  * Clear inner floats
@@ -52,7 +66,7 @@ button {
   .header__logo {
     height: 3rem; }
   .header__text-box {
-    margin-top: 8rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +74,7 @@ button {
     text-transform: uppercase;
     text-align: center; }
   .header__bg-img {
-    margin-top: 4rem;
+    margin-top: 8rem;
     width: 80vw; }
 
 .heading-primary {
@@ -122,25 +136,29 @@ button {
 .section-about {
   position: block;
   width: 100%;
-  height: auto;
   margin: 0 auto;
   text-align: center;
   margin-top: 8rem;
   text-transform: uppercase; }
   .section-about .row {
+    position: relative;
     display: flex;
     width: 75%;
     text-align: left;
     margin: 0 auto;
-    align-items: center; }
+    align-items: center;
+    padding: 0rem 3rem; }
 
-.col-1 {
-  width: 41vw;
-  font-size: 1rem;
-  font-weight: 300; }
-  .col-1 p {
-    line-height: 2rem;
-    text-transform: capitalize; }
-
-.col-2 .composition img {
-  width: 40rem; }
+.col {
+  position: relative; }
+  .col-1 {
+    width: 41vw;
+    font-size: 1rem;
+    font-weight: 300; }
+    .col-1 p {
+      line-height: 2rem;
+      text-transform: capitalize; }
+    .col-1 a {
+      position: absolute; }
+  .col-2 .composition img {
+    width: 40rem; }

@@ -12,7 +12,9 @@
     }
 
     &__text-box {
-        margin-top: $margin--large;
+        margin-top: $margin--medium;
+        
+        // margin-bottom: $margin--medium;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -22,7 +24,7 @@
     }
 
     &__bg-img {
-        margin-top: $margin--medium;
+        margin-top: $margin--large;
         width: 80vw;
     }
 

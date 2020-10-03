@@ -1,0 +1,27 @@
+.heading-secondary {
+    font-size: 2.4rem;
+    color: $color-black;
+    background-image: -webkit-gradient(linear, left top, right top, from(#8EC6C5), to(#8566aa));
+    background-image: linear-gradient(to right, #8EC6C5, #8566aa);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.heading-tertiary {
+    font-size: 1.8rem;
+    color: $color-black;
+}
+
+.u-margin-top-small {
+    margin-top: $margin--small;
+}
+
+.btn-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $color-white;
+    background-color: #2E6BD1;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    outline: none;
+}

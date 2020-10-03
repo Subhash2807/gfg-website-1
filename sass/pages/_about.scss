@@ -1,0 +1,41 @@
+.section-about {
+    position: block;
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: $margin--large;
+    text-transform: uppercase;
+    
+
+    .row{
+        display: flex;
+        width: 75%;
+        text-align: left;
+        margin: 0 auto;
+        // justify-content: center;
+        // flex-direction: column;
+        // padding: 1rem 3rem;
+        align-items: center;
+    }
+}
+
+.col {
+    &-1{
+        width: 41vw;
+        font-size: 1rem;
+        font-weight: 300;
+        // overflow: hidden;
+        
+        p{
+            line-height: 2rem;
+            text-transform: capitalize;
+        }
+    }
+
+    &-2{
+        .composition img{
+            width: 40rem
+        }
+    }
+}

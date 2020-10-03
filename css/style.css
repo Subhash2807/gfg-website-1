@@ -13,6 +13,30 @@ button {
 /**
  * Basic typography style for copy text
  */
+.heading-secondary {
+  font-size: 2.4rem;
+  color: #000000;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8EC6C5), to(#8566aa));
+  background-image: linear-gradient(to right, #8EC6C5, #8566aa);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  color: #000000; }
+
+.u-margin-top-small {
+  margin-top: 2rem; }
+
+.btn-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #2E6BD1;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  outline: none; }
+
 /**
  * Clear inner floats
  */
@@ -94,3 +118,29 @@ button {
   100% {
     background-position: left bottom;
     background-color: #8ec6c5; } }
+
+.section-about {
+  position: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 8rem;
+  text-transform: uppercase; }
+  .section-about .row {
+    display: flex;
+    width: 75%;
+    text-align: left;
+    margin: 0 auto;
+    align-items: center; }
+
+.col-1 {
+  width: 41vw;
+  font-size: 1rem;
+  font-weight: 300; }
+  .col-1 p {
+    line-height: 2rem;
+    text-transform: capitalize; }
+
+.col-2 .composition img {
+  width: 40rem; }

@@ -15,7 +15,9 @@
   'base/base',
   'base/fonts',
   'base/typography',
+  "base/utilities",
   'base/helpers';
+
 
 // 4. Layout-related sections
 @import
@@ -28,6 +30,7 @@
 
 // 6. Page-specific styles
 @import
+  'pages/about',
   'pages/home';
 
 // 7. Themes

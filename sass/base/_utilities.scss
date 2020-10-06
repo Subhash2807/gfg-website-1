@@ -1,15 +1,16 @@
-.heading-secondary {
-    position: relative;;
-    overflow-y: hidden;
-    font-size: 1.7rem;
+.heading-secondary  {
+    position: relative;
+    overflow: hidden;
+    font-size: 1.8rem;
     color: $color-black;
     background-image: -webkit-gradient(linear, left top, right top, from(#8EC6C5), to(#8566aa));
     background-image: linear-gradient(to right, #8EC6C5, #8566aa);
     -webkit-background-clip: text;
     color: transparent;
     transition: all 0.3s;
-
-    &:hover {
+    height: 20vh;
+    // color: white;//for darkmode
+    &:hover  {
     -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 3rem rgba(0,0,0,0.5);
@@ -18,7 +19,7 @@
 
 .heading-tertiary {
     font-size: 1.8rem;
-    color: $color-black;
+    // color: $color-white;//for dark mode
 }
 
 .u-margin-top-small {
@@ -29,11 +30,15 @@
     margin-bottom: $margin--large;
 }
 
+.u-margin-bottom-medium{
+    margin-bottom: $margin--medium;
+}
+
 .btn-text {
     font-size: 1.3rem;
     font-weight: 700;
     color: $color-white;
-    background-color: #2E6BD1;
+    background-color: $color-blue;
     text-decoration: none;
     padding:0.7rem 2rem;
     transition: all 0.3s;
